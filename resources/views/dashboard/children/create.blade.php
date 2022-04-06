@@ -7,7 +7,7 @@
         <!--begin::Container-->
         <div id="kt_content_container" class="container-xxl">
 
-            <form id="kt_ecommerce_add_product_form" class="form d-flex flex-column flex-lg-row">
+            <form   class="form d-flex flex-column flex-lg-row needs-validation"  >
                 <!--begin::Aside column-->
 
 
@@ -30,308 +30,111 @@
                                             <h2> بيانات الطفل </h2>
                                         </div>
                                     </div>
-                                    <!--end::Card header-->
-                                    <!--begin::Card body-->
-                                    <div class="modal-body py-10 px-lg-17 ">
-                                        <div class="d-flex flex-column flex-md-row gap-5">
 
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-12 mt-8">
 
+                                                    <label for="full_name" class="form-label required">الاسم بالكامل </label>
+                                                    <input type="text" class="form-control form-control-solid" name="full_name" id="full_name" required>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                      </div>
+                                                </div>
 
+                                                <div class="col-md-4 col-sm-12 mt-8">
 
+                                                    <label for="id_number" class="form-label required"> رقم الهوية</label>
+                                                    <input type="number" class="form-control form-control-solid" name="id_number" id="id_number">
 
-                                            <div class="flex-row-fluid">
-                                                <!--begin::Label-->
-                                                <label for="full_name" class="required form-label">الاسم كامل</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control" type="text" id="full_name" name="full_name"
-                                                    placeholder="" value="">
-                                                <!--end::Input-->
-                                            </div>
-                                            <div class="fv-row flex-row-fluid fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label for="id_number" class="required form-label">رقم الهوية</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control" type="number" id="id_number" name="id_number"
-                                                    placeholder="" value="">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
-                                            </div>
-                                            <div class="fv-row flex-row-fluid fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label for="date_birth" class="required form-label">تاريخ الميلاد</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control" type="date" id="date_birth" name="date_birth"
-                                                    placeholder="" value="">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <div class="d-flex flex-column flex-md-row gap-5">
+                                                </div>
+                                                <div class="col-md-4 col-sm-12 mt-8">
 
+                                                    <label for="age" class="form-label required"> العمر</label>
+                                                    <input type="text" value="14" disabled
+                                                        class="form-control form-control-solid" name="age" id="age">
 
+                                                </div>
+                                                <div class="col-md-4 col-sm-12 mt-8">
 
-                                            <!--begin::Input group-->
-                                            <div class="fv-row mb-7">
-                                                <!--begin::Label-->
-                                                <label class="required fs-6 fw-bold mb-2"> حالة المواطنة</label>
-                                                <div class="fv-row mb-10">
-                                                    <!--begin::Label-->
+                                                    <label for="date_of_birth" class="form-label required">تاريخ الميلاد</label>
+                                                    <input type="date" class="form-control form-control-solid" name="date_of_birth" id="date_of_birth">
 
-                                                    <!--begin::Row-->
-                                                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-1 row-cols-xl-3 g-9"
-                                                        data-kt-buttons="true"
-                                                        data-kt-buttons-target="[data-kt-button='true']">
-                                                        <!--begin::Col-->
-                                                        <div class="col">
-                                                            <!--begin::Option-->
-                                                            <label
-                                                                class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                                                data-kt-button="true">
-                                                                <!--begin::Radio-->
-                                                                <span
-                                                                    class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="Citzienship" value="1">
-                                                                </span>
-                                                                <!--end::Radio-->
-                                                                <!--begin::Info-->
-                                                                <span class="ms-5">
-                                                                    <span
-                                                                        class="fs-4 fw-bolder text-gray-800 d-block">لاجىء</span>
-                                                                </span>
-                                                                <!--end::Info-->
-                                                            </label>
-                                                            <!--end::Option-->
-                                                        </div>
-                                                        <div class="col">
-                                                            <!--begin::Option-->
-                                                            <label
-                                                                class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                                                data-kt-button="true">
-                                                                <!--begin::Radio-->
-                                                                <span
-                                                                    class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="Citzienship" value="1">
-                                                                </span>
-                                                                <!--end::Radio-->
-                                                                <!--begin::Info-->
-                                                                <span class="ms-5">
-                                                                    <span
-                                                                        class="fs-4 fw-bolder text-gray-800 d-block">مواطن</span>
-                                                                </span>
-                                                                <!--end::Info-->
-                                                            </label>
-                                                            <!--end::Option-->
-                                                        </div>
+                                                </div>
 
+                                                <div class="col-md-4 col-sm-12 mt-6">
 
+                                                    <label for="place_of_birth" class="form-label required"> مكان الميلاد </label>
+                                                    <input type="text" class="form-control form-control-solid" name="place_of_birth" id="place_of_birth">
 
+                                                </div>
+                                                <div class="col-md-4 col-sm-12 mt-8">
 
+                                                    <label for="citzienship_cd" class="form-label required"> حالة المواطنة</label>
 
-                                                    </div>
+                                                    <select class="form-select form-control form-control-solid"
+                                                        aria-label="Default select example" name="citzienship_cd" id="citzienship_cd">
+                                                        <option selected> أختار</option>
+                                                        <option value="1">مواطن</option>
+                                                        <option value="2">لاجئ</option>
 
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-md-4 col-sm-12 mt-8">
+
+                                                    <label for="gender_cd" class="form-label required"> الجنس </label>
+
+                                                    <select class="form-control form-control-solid" name="gender_cd" id="gender_cd"
+                                                        aria-label="Default select example" >
+                                                        <option selected>أختار</option>
+                                                        <option value="1">ذكر</option>
+                                                        <option value="2">أنثى</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-md-4 col-sm-12 mt-8">
+
+                                                    <label for=" " class="form-label required"> نوع الإعاقة </label>
+
+                                                    <select class="form-select form-control form-control-solid"
+                                                        aria-label="Default select example" name="disability_type_cd" id="disability_type_cd">
+                                                        <option selected> أختار</option>
+                                                        <option value="AE">سمعية</option>
+                                                        <option value="GB">بصرية </option>
+                                                        <option value="GB">تواصل </option>
+                                                        <option value="GB">جسدية </option>
+                                                        <option value="GB">عقلية </option>
+                                                        <option value="GB">متعددة </option>
+
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-md-4 col-sm-12 mt-8">
+
+                                                    <label for="notes" class="form-label required">الملاحظات</label>
+                                                    <textarea class="form-control form-control-solid" id="notes" name="notes" rows="4" cols="50"></textarea>
 
                                                 </div>
 
                                             </div>
-                                            <div class="fv-row mb-7">
-                                                <!--begin::Label-->
-                                                <label class="required fs-6 fw-bold mb-2"> الجنس </label>
-                                                <div class="fv-row mb-10">
-                                                    <!--begin::Label-->
-
-                                                    <!--begin::Row-->
-                                                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-1 row-cols-xl-3 g-9"
-                                                        data-kt-buttons="true"
-                                                        data-kt-buttons-target="[data-kt-button='true']">
-                                                        <!--begin::Col-->
-                                                        <div class="col">
-                                                            <!--begin::Option-->
-                                                            <label
-                                                                class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                                                data-kt-button="true">
-                                                                <!--begin::Radio-->
-                                                                <span
-                                                                    class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="Gender" value="1">
-                                                                </span>
-                                                                <!--end::Radio-->
-                                                                <!--begin::Info-->
-                                                                <span class="ms-5">
-                                                                    <span
-                                                                        class="fs-4 fw-bolder text-gray-800 d-block">زكر</span>
-                                                                </span>
-                                                                <!--end::Info-->
-                                                            </label>
-                                                            <!--end::Option-->
-                                                        </div>
-                                                        <div class="col">
-                                                            <!--begin::Option-->
-                                                            <label
-                                                                class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                                                data-kt-button="true">
-                                                                <!--begin::Radio-->
-                                                                <span
-                                                                    class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="Gender" value="1">
-                                                                </span>
-                                                                <!--end::Radio-->
-                                                                <!--begin::Info-->
-                                                                <span class="ms-5">
-                                                                    <span
-                                                                        class="fs-4 fw-bolder text-gray-800 d-block">أنثى</span>
-                                                                </span>
-                                                                <!--end::Info-->
-                                                            </label>
-                                                            <!--end::Option-->
-                                                        </div>
-                                                        <!--end::Col-->
-                                                        <!--begin::Col-->
-
-                                                        <!--end::Col-->
-                                                        <!--begin::Col-->
-
-                                                        <!--end::Col-->
-                                                    </div>
-                                                    <!--end::Row-->
-                                                </div>
-
-                                            </div>
-                                            <!--end::Input group-->
 
                                         </div>
 
 
-
-
-                                        <!--begin::Input group-->
-                                        <div class="d-flex flex-column mb-7 fv-row">
-                                            <!--begin::Label-->
-                                            <label class="fs-6 fw-bold mb-2">
-                                                <span class="required">نوع الإعاقة</span>
-                                                <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip"
-                                                    title="Country of origination"></i>
-                                            </label>
-                                            <!--end::Label-->
-                                            <!--begin::Input-->
-                                            <select name="country" aria-label="" data-control="select2"
-                                                class="form-select form-select-solid fw-bolder">
-                                                <option value="">اختار نوع الإعاقة</option <option value="AF">بصرية</option>
-                                                <option value="AE">سمعية</option>
-                                                <option value="GB">تواصل </option>
-                                                <option value="GB">جسدية </option>
-                                                <option value="GB">عقلية</option>
-                                                <option value="GB">متعدد</option>
-
-                                            </select>
-                                            <!--end::Input-->
-                                        </div>
-                                        <!--end::Input group-->
-                                        <div>
-                                            <!--begin::Label-->
-                                            <label class="form-label">الملاحظات</label>
-                                            <!--end::Label-->
-                                            <!--begin::Editor-->
-                                            <div class="ql-toolbar ql-snow"><span class="ql-formats"><span
-                                                        class="ql-header ql-picker"><span class="ql-picker-label"
-                                                            tabindex="0" role="button" aria-expanded="false"
-                                                            aria-controls="ql-picker-options-0"><svg viewBox="0 0 18 18">
-                                                                <polygon class="ql-stroke"
-                                                                    points="7 11 9 13 11 11 7 11"></polygon>
-                                                                <polygon class="ql-stroke" points="7 7 9 5 11 7 7 7">
-                                                                </polygon>
-                                                            </svg></span><span class="ql-picker-options" aria-hidden="true"
-                                                            tabindex="-1" id="ql-picker-options-0"><span tabindex="0"
-                                                                role="button" class="ql-picker-item"
-                                                                data-value="1"></span><span tabindex="0" role="button"
-                                                                class="ql-picker-item" data-value="2"></span><span
-                                                                tabindex="0" role="button"
-                                                                class="ql-picker-item ql-selected"></span></span></span><select
-                                                        class="ql-header" style="display: none;">
-                                                        <option value="1"></option>
-                                                        <option value="2"></option>
-                                                        <option selected="selected"></option>
-                                                    </select></span><span class="ql-formats"><button type="button"
-                                                        class="ql-bold"><svg viewBox="0 0 18 18">
-                                                            <path class="ql-stroke"
-                                                                d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z">
-                                                            </path>
-                                                            <path class="ql-stroke"
-                                                                d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z">
-                                                            </path>
-                                                        </svg></button><button type="button" class="ql-italic"><svg
-                                                            viewBox="0 0 18 18">
-                                                            <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4">
-                                                            </line>
-                                                            <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14">
-                                                            </line>
-                                                            <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4">
-                                                            </line>
-                                                        </svg></button><button type="button" class="ql-underline"><svg
-                                                            viewBox="0 0 18 18">
-                                                            <path class="ql-stroke"
-                                                                d="M5,3V9a4.012,4.012,0,0,0,4,4H9a4.012,4.012,0,0,0,4-4V3">
-                                                            </path>
-                                                            <rect class="ql-fill" height="1" rx="0.5" ry="0.5"
-                                                                width="12" x="3" y="15"></rect>
-                                                        </svg></button></span><span class="ql-formats"><button
-                                                        type="button" class="ql-image"><svg viewBox="0 0 18 18">
-                                                            <rect class="ql-stroke" height="10" width="12" x="3" y="4">
-                                                            </rect>
-                                                            <circle class="ql-fill" cx="6" cy="7" r="1"></circle>
-                                                            <polyline class="ql-even ql-fill"
-                                                                points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"></polyline>
-                                                        </svg></button><button type="button" class="ql-code-block"><svg
-                                                            viewBox="0 0 18 18">
-                                                            <polyline class="ql-even ql-stroke" points="5 7 3 9 5 11">
-                                                            </polyline>
-                                                            <polyline class="ql-even ql-stroke" points="13 7 15 9 13 11">
-                                                            </polyline>
-                                                            <line class="ql-stroke" x1="10" x2="8" y1="5" y2="13">
-                                                            </line>
-                                                        </svg></button></span></div>
-                                            <div id="kt_ecommerce_add_product_description"
-                                                name="kt_ecommerce_add_product_description"
-                                                class="min-h-200px mb-2 ql-container ql-snow">
-                                                <div class="ql-editor ql-blank" data-gramm="false" contenteditable="true"
-                                                    data-placeholder="">
-                                                    <p><br></p>
-                                                </div>
-                                                <div class="ql-clipboard" contenteditable="true" tabindex="-1"></div>
-                                                <div class="ql-tooltip ql-hidden"><a class="ql-preview"
-                                                        rel="noopener noreferrer" target="_blank"
-                                                        href="about:blank"></a><input type="text" data-formula="e=mc^2"
-                                                        data-link="https://quilljs.com" data-video="Embed URL"><a
-                                                        class="ql-action"></a><a class="ql-remove"></a></div>
-                                            </div>
-                                            <!--end::Editor-->
-                                            <!--begin::Description-->
-                                            <div class="text-muted fs-7"></div>
-                                            <!--end::Description-->
-                                        </div>
-                                        <!--end::Input group-->
-                                    </div>
-                                    <!--end::Card header-->
                                 </div>
                                 <!--end::General options-->
 
 
                             </div>
                         </div>
-                        <br> <br>
+
 
                     </div>
                     <!--end::Tab content-->
                     <div class="tab-content">
                         <!--begin::Tab pane-->
-                        <div class="tab-pane fade show active" id="kt_ecommerce_add_product_general" role="tab-panel">
+                        <div class="tab-pane fade show active">
                             <div class="d-flex flex-column gap-7 gap-lg-10">
                                 <!--begin::General options-->
                                 <div class="card card-flush py-10">
@@ -341,302 +144,270 @@
                                             <h2> بيانات الاسرة </h2>
                                         </div>
                                     </div>
-                                    <!--end::Card header-->
-                                    <!--begin::Card body-->
-                                    <div class="modal-body py-10 px-lg-17 ">
-                                        <!--begin::Input group-->
-                                        <div class="d-flex flex-column mb-7 fv-row">
-                                            <!--begin::Label-->
-                                            <label class="fs-6 fw-bold mb-2">
-                                                <span class="required"> العلاقة بالطفل</span>
-                                                <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip"
-                                                    title="Country of origination"></i>
-                                            </label>
-                                            <!--end::Label-->
-                                            <!--begin::Input-->
-                                            <select name="country" aria-label="" data-control="select2"
-                                                class="form-select form-select-solid fw-bolder">
-                                                <option value="">اختار</option <option value="AE">أب</option>
-                                                <option value="AE">أم</option>
-                                                <option value="GB">أخ </option>
-                                                <option value="GB">أخت </option>
-                                                <option value="GB">زوجة الأب</option>
-                                                <option value="GB">زوجة الأم</option>
-                                                <option value="GB"> جد</option>
+                                    <!--begin::Repeater-->
+                                    <div id="kt_docs_repeater_basic">
+                                        <!--begin::Form group-->
+                                        <div class="form-group p-12">
+                                            <div data-repeater-list="kt_docs_repeater_basic">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-sm-12 mt-8">
 
-                                            </select>
-                                            <!--end::Input-->
-                                        </div>
-                                        <!--end::Input group-->
-                                        <br><br>
-
-                                        <div class="d-flex flex-column flex-md-row gap-5">
-
-
-
-                                            <div class="flex-row-fluid">
-                                                <!--begin::Label-->
-                                                <label for="full_name" class="required form-label">الاسم كامل</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control" type="text" id="full_name" name="full_name"
-                                                    placeholder="" value="">
-                                                <!--end::Input-->
-                                            </div>
-                                            <div class="fv-row flex-row-fluid fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label for="id_number" class="required form-label">رقم الهوية</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control" type="number" id="id_number" name="id_number"
-                                                    placeholder="" value="">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
-                                            </div>
-                                            <div class="fv-row flex-row-fluid fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label for="date_birth" class="required form-label">تاريخ الميلاد</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control" type="date" id="date_birth" name="date_birth"
-                                                    placeholder="" value="">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <div class="flex-row-fluid">
-                                            <!--begin::Label-->
-                                            <label for="place_birth" class="required form-label"> مكان الميلاد</label>
-                                            <!--end::Label-->
-                                            <!--begin::Input-->
-                                            <input class="form-control" type="text" id="place_birth" name="place_birth"
-                                                placeholder="" value="">
-                                            <!--end::Input-->
-                                        </div>
-                                        <!--begin::Input group-->
-                                        <br>
-                                        <div class="d-flex flex-column flex-md-row gap-5">
-
-
-
-                                            <!--begin::Input group-->
-                                            <div class="fv-row mb-7">
-                                                <!--begin::Label-->
-                                                <label class="required fs-6 fw-bold mb-2"> حالة المواطنة</label>
-                                                <div class="fv-row mb-10">
-                                                    <!--begin::Label-->
-
-                                                    <!--begin::Row-->
-                                                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-1 row-cols-xl-3 g-9"
-                                                        data-kt-buttons="true"
-                                                        data-kt-buttons-target="[data-kt-button='true']">
-                                                        <!--begin::Col-->
-                                                        <div class="col">
-                                                            <!--begin::Option-->
-                                                            <label
-                                                                class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                                                data-kt-button="true">
-                                                                <!--begin::Radio-->
-                                                                <span
-                                                                    class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="Citzienship" value="1">
-                                                                </span>
-                                                                <!--end::Radio-->
-                                                                <!--begin::Info-->
-                                                                <span class="ms-5">
-                                                                    <span
-                                                                        class="fs-4 fw-bolder text-gray-800 d-block">لاجىء</span>
-                                                                </span>
-                                                                <!--end::Info-->
+                                                            <label for=" " class="form-label required"> العلاقة بالطفل
                                                             </label>
-                                                            <!--end::Option-->
+
+                                                            <select class="form-select form-control form-control-solid"
+                                                                aria-label="Default select example" id="relationship_cd" name="relationship_cd">
+                                                                <option selected>أختار</option>
+                                                                <option value="AE">أب</option>
+                                                                <option value="GB">أم </option>
+                                                                <option value="GB">أخت </option>
+                                                                <option value="GB">أخ</option>
+                                                                <option value="GB">زوجة الأب</option>
+                                                                <option value="GB">زوجة الأم</option>
+                                                                <option value="GB"> جد</option>
+                                                            </select>
+
                                                         </div>
-                                                        <div class="col">
-                                                            <!--begin::Option-->
-                                                            <label
-                                                                class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                                                data-kt-button="true">
-                                                                <!--begin::Radio-->
-                                                                <span
-                                                                    class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="Citzienship" value="1">
-                                                                </span>
-                                                                <!--end::Radio-->
-                                                                <!--begin::Info-->
-                                                                <span class="ms-5">
-                                                                    <span
-                                                                        class="fs-4 fw-bolder text-gray-800 d-block">مواطن</span>
-                                                                </span>
-                                                                <!--end::Info-->
-                                                            </label>
-                                                            <!--end::Option-->
+                                                        <div class="col-md-4 col-sm-12 mt-8">
+
+                                                            <label for="full_name_two" class="form-label required"> الأسم
+                                                                بالكامل</label>
+                                                            <input type="text" class="form-control form-control-solid"
+                                                                id="full_name_two" name="full_name_two">
+                                                        <div class="invalid-feedback">
+                                                            Please choose a username.
                                                         </div>
 
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-12 mt-8">
+
+                                                            <label for="id_number_two" class="form-label required"> رقم الهوية</label>
+                                                            <input type="number" class="form-control form-control-solid"
+                                                                name="id_number_two" id="id_number_two">
+
+                                                        </div>
+
+                                                        <div class="col-md-4 col-sm-12 mt-8">
+
+                                                            <label for="date_of_birth_two" class="form-label required">تاريخ الميلاد</label>
+                                                            <input type="date" class="form-control form-control-solid"
+                                                               name="date_of_birth_two" id="date_of_birth_two">
+
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-12 mt-8">
+
+                                                            <label for="place_of_birth_two" class="form-label required"> مكان الميلاد
+                                                            </label>
+                                                            <input type="text" class="form-control form-control-solid"
+                                                               name="place_of_birth_two" id="place_of_birth_two">
+
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-12 mt-8">
+
+                                                            <label for="citzienship_cd_two" class="form-label required"> حالة المواطنة</label>
+
+                                                            <select class="form-select form-control form-control-solid"
+                                                                aria-label="Default select example" name="citzienship_cd_two" id="citzienship_cd_two">
+                                                                <option selected> أختار</option>
+                                                                <option value="1">مواطن</option>
+                                                                <option value="2">لاجئ</option>
+
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-12 mt-8">
+
+                                                            <label for="gender_cd_two" class="form-label required"> الجنس </label>
+
+                                                            <select class="form-select form-control form-control-solid"
+                                                                aria-label="Default select example" id="gender_cd_two" name="gender_cd_two">
+                                                                <option selected> أختار</option>
+                                                                <option value="1">ذكر</option>
+                                                                <option value="2">أنثى</option>
+
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-12 mt-8">
+
+                                                            <label for="disability_type_cd_two" class="form-label required"> نوع الإعاقة </label>
+
+                                                            <select class="form-select form-control form-control-solid"
+                                                                aria-label="Default select example" name="disability_type_cd_two" id="disability_type_cd_two">
+                                                                <option selected> أختار</option>
+                                                                <option value="AE">سمعية</option>
+                                                                <option value="GB">بصرية </option>
+                                                                <option value="GB">تواصل </option>
+                                                                <option value="GB">جسدية </option>
+                                                                <option value="GB">عقلية </option>
+                                                                <option value="GB">متعددة </option>
+
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-12 mt-8">
+
+                                                            <label for="living_status_cd" class=" form-label required"> حالة العيش </label>
+
+                                                            <select class="form-control form-control-solid"
+                                                                aria-label="Default select example" id="living_status_cd" name="living_status_cd">
+                                                                <option selected> أختار</option>
+                                                                <option value="AE">يعيش مع الطفل</option>
+                                                                <option value="GB">لا يعيش مع الطفل </option>
 
 
+                                                            </select>
 
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+
+                                                <div data-repeater-item>
+
+                                                    <div class="container">
+                                                        <div class="row text-start">
+                                                            <div class="col-md-12 d-flex justify-content-end mt-6">
+                                                                <a href="javascript:;" data-repeater-delete
+                                                                    class="btn btn-sm btn-danger  ">
+                                                                    <i class="la"></i>Remove
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                                <label for=" " class="form-label required"> العلاقة بالطفل
+                                                                </label>
+
+                                                                <select class="form-select form-control form-control-solid"
+                                                                    aria-label="Default select example" id="relationship_cd" name="relationship_cd">
+                                                                    <option selected>أختار</option>
+                                                                    <option value="AE">أب</option>
+                                                                    <option value="GB">أم </option>
+                                                                    <option value="GB">أخت </option>
+                                                                    <option value="GB">أخ</option>
+                                                                    <option value="GB">زوجة الأب</option>
+                                                                    <option value="GB">زوجة الأم</option>
+                                                                    <option value="GB"> جد</option>
+                                                                </select>
+
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                                <label for="full_name_two" class="form-label required"> الأسم
+                                                                    بالكامل</label>
+                                                                <input type="text" class="form-control form-control-solid"
+                                                                    id="full_name_two" name="full_name_two">
+                                                            <div class="invalid-feedback">
+                                                                Please choose a username.
+                                                            </div>
+
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                                <label for="id_number_two" class="form-label required"> رقم الهوية</label>
+                                                                <input type="number" class="form-control form-control-solid"
+                                                                    name="id_number_two" id="id_number_two">
+
+                                                            </div>
+
+                                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                                <label for="date_of_birth_two" class="form-label required">تاريخ الميلاد</label>
+                                                                <input type="date" class="form-control form-control-solid"
+                                                                   name="date_of_birth_two" id="date_of_birth_two">
+
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                                <label for="place_of_birth_two" class="form-label required"> مكان الميلاد
+                                                                </label>
+                                                                <input type="text" class="form-control form-control-solid"
+                                                                   name="place_of_birth_two" id="place_of_birth_two">
+
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                                <label for="citzienship_cd_two" class="form-label required"> حالة المواطنة</label>
+
+                                                                <select class="form-select form-control form-control-solid"
+                                                                    aria-label="Default select example" name="citzienship_cd_two" id="citzienship_cd_two">
+                                                                    <option selected> أختار</option>
+                                                                    <option value="1">مواطن</option>
+                                                                    <option value="2">لاجئ</option>
+
+                                                                </select>
+
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                                <label for="gender_cd_two" class="form-label required"> الجنس </label>
+
+                                                                <select class="form-select form-control form-control-solid"
+                                                                    aria-label="Default select example" id="gender_cd_two" name="gender_cd_two">
+                                                                    <option selected> أختار</option>
+                                                                    <option value="1">ذكر</option>
+                                                                    <option value="2">أنثى</option>
+
+                                                                </select>
+
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                                <label for="disability_type_cd_two" class="form-label required"> نوع الإعاقة </label>
+
+                                                                <select class="form-select form-control form-control-solid"
+                                                                    aria-label="Default select example" name="disability_type_cd_two" id="disability_type_cd_two">
+                                                                    <option selected> أختار</option>
+                                                                    <option value="AE">سمعية</option>
+                                                                    <option value="GB">بصرية </option>
+                                                                    <option value="GB">تواصل </option>
+                                                                    <option value="GB">جسدية </option>
+                                                                    <option value="GB">عقلية </option>
+                                                                    <option value="GB">متعددة </option>
+
+                                                                </select>
+
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                                <label for="living_status_cd" class=" form-label required"> حالة العيش </label>
+
+                                                                <select class="form-control form-control-solid"
+                                                                    aria-label="Default select example" id="living_status_cd" name="living_status_cd">
+                                                                    <option selected> أختار</option>
+                                                                    <option value="AE">يعيش مع الطفل</option>
+                                                                    <option value="GB">لا يعيش مع الطفل </option>
+
+
+                                                                </select>
+
+                                                            </div>
+
+                                                        </div>
 
                                                     </div>
 
 
                                                 </div>
-
                                             </div>
-                                            <div class="fv-row mb-7">
-                                                <!--begin::Label-->
-                                                <label class="required fs-6 fw-bold mb-2"> الجنس </label>
-                                                <div class="fv-row mb-10">
-                                                    <!--begin::Label-->
-
-                                                    <!--begin::Row-->
-                                                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-1 row-cols-xl-3 g-9"
-                                                        data-kt-buttons="true"
-                                                        data-kt-buttons-target="[data-kt-button='true']">
-                                                        <!--begin::Col-->
-                                                        <div class="col">
-                                                            <!--begin::Option-->
-                                                            <label
-                                                                class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                                                data-kt-button="true">
-                                                                <!--begin::Radio-->
-                                                                <span
-                                                                    class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="Gender" value="1">
-                                                                </span>
-                                                                <!--end::Radio-->
-                                                                <!--begin::Info-->
-                                                                <span class="ms-5">
-                                                                    <span
-                                                                        class="fs-4 fw-bolder text-gray-800 d-block">زكر</span>
-                                                                </span>
-                                                                <!--end::Info-->
-                                                            </label>
-                                                            <!--end::Option-->
-                                                        </div>
-                                                        <div class="col">
-                                                            <!--begin::Option-->
-                                                            <label
-                                                                class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                                                data-kt-button="true">
-                                                                <!--begin::Radio-->
-                                                                <span
-                                                                    class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="Gender" value="1">
-                                                                </span>
-                                                                <!--end::Radio-->
-                                                                <!--begin::Info-->
-                                                                <span class="ms-5">
-                                                                    <span
-                                                                        class="fs-4 fw-bolder text-gray-800 d-block">أنثى</span>
-                                                                </span>
-                                                                <!--end::Info-->
-                                                            </label>
-                                                            <!--end::Option-->
-                                                        </div>
-
-                                                    </div>
-                                                    <!--end::Row-->
-                                                </div>
-
-                                            </div>
-                                            <!--end::Input group-->
-
                                         </div>
+                                        <!--end::Form group-->
 
-
-                                        <!--end::Input group-->
-
-
-                                        <div>
-                                            <!--begin::Label-->
-                                            <label class="form-label">الملاحظات</label>
-                                            <!--end::Label-->
-                                            <!--begin::Editor-->
-                                            <div class="ql-toolbar ql-snow"><span class="ql-formats"><span
-                                                        class="ql-header ql-picker"><span class="ql-picker-label"
-                                                            tabindex="0" role="button" aria-expanded="false"
-                                                            aria-controls="ql-picker-options-0"><svg viewBox="0 0 18 18">
-                                                                <polygon class="ql-stroke"
-                                                                    points="7 11 9 13 11 11 7 11"></polygon>
-                                                                <polygon class="ql-stroke" points="7 7 9 5 11 7 7 7">
-                                                                </polygon>
-                                                            </svg></span><span class="ql-picker-options" aria-hidden="true"
-                                                            tabindex="-1" id="ql-picker-options-0"><span tabindex="0"
-                                                                role="button" class="ql-picker-item"
-                                                                data-value="1"></span><span tabindex="0" role="button"
-                                                                class="ql-picker-item" data-value="2"></span><span
-                                                                tabindex="0" role="button"
-                                                                class="ql-picker-item ql-selected"></span></span></span><select
-                                                        class="ql-header" style="display: none;">
-                                                        <option value="1"></option>
-                                                        <option value="2"></option>
-                                                        <option selected="selected"></option>
-                                                    </select></span><span class="ql-formats"><button type="button"
-                                                        class="ql-bold"><svg viewBox="0 0 18 18">
-                                                            <path class="ql-stroke"
-                                                                d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z">
-                                                            </path>
-                                                            <path class="ql-stroke"
-                                                                d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z">
-                                                            </path>
-                                                        </svg></button><button type="button" class="ql-italic"><svg
-                                                            viewBox="0 0 18 18">
-                                                            <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4">
-                                                            </line>
-                                                            <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14">
-                                                            </line>
-                                                            <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4">
-                                                            </line>
-                                                        </svg></button><button type="button" class="ql-underline"><svg
-                                                            viewBox="0 0 18 18">
-                                                            <path class="ql-stroke"
-                                                                d="M5,3V9a4.012,4.012,0,0,0,4,4H9a4.012,4.012,0,0,0,4-4V3">
-                                                            </path>
-                                                            <rect class="ql-fill" height="1" rx="0.5" ry="0.5"
-                                                                width="12" x="3" y="15"></rect>
-                                                        </svg></button></span><span class="ql-formats"><button
-                                                        type="button" class="ql-image"><svg viewBox="0 0 18 18">
-                                                            <rect class="ql-stroke" height="10" width="12" x="3"
-                                                                y="4"></rect>
-                                                            <circle class="ql-fill" cx="6" cy="7" r="1"></circle>
-                                                            <polyline class="ql-even ql-fill"
-                                                                points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"></polyline>
-                                                        </svg></button><button type="button" class="ql-code-block"><svg
-                                                            viewBox="0 0 18 18">
-                                                            <polyline class="ql-even ql-stroke" points="5 7 3 9 5 11">
-                                                            </polyline>
-                                                            <polyline class="ql-even ql-stroke" points="13 7 15 9 13 11">
-                                                            </polyline>
-                                                            <line class="ql-stroke" x1="10" x2="8" y1="5" y2="13">
-                                                            </line>
-                                                        </svg></button></span></div>
-                                            <div id="kt_ecommerce_add_product_description"
-                                                name="kt_ecommerce_add_product_description"
-                                                class="min-h-200px mb-2 ql-container ql-snow">
-                                                <div class="ql-editor ql-blank" data-gramm="false" contenteditable="true"
-                                                    data-placeholder="">
-                                                    <p><br></p>
-                                                </div>
-                                                <div class="ql-clipboard" contenteditable="true" tabindex="-1"></div>
-                                                <div class="ql-tooltip ql-hidden"><a class="ql-preview"
-                                                        rel="noopener noreferrer" target="_blank"
-                                                        href="about:blank"></a><input type="text" data-formula="e=mc^2"
-                                                        data-link="https://quilljs.com" data-video="Embed URL"><a
-                                                        class="ql-action"></a><a class="ql-remove"></a></div>
-                                            </div>
-                                            <!--end::Editor-->
-                                            <!--begin::Description-->
-                                            <div class="text-muted fs-7"></div>
-                                            <!--end::Description-->
+                                        <!--begin::Form group-->
+                                        <div class="form-group mt-2 p-12 " style="float: left;">
+                                            <a href="javascript:;" data-repeater-create class="btn btn-primary">
+                                                <i class="la la-plus"></i>أضافة
+                                            </a>
                                         </div>
-                                        <!--end::Input group-->
+                                        <!--end::Form group-->
                                     </div>
-                                    <!--end::Card header-->
+                                    <!--end::Repeater-->
+
                                 </div>
                                 <!--end::General options-->
 
@@ -658,114 +429,68 @@
                                             <h2> بيانات التواصل مع الطفل </h2>
                                         </div>
                                     </div>
-                                    <!--end::Card header-->
-                                    <!--begin::Card body-->
-                                    <div class="modal-body py-10 px-lg-17 ">
-                                        <!--begin::Input group-->
-                                        <div class="d-flex flex-column mb-7 fv-row">
-                                            <!--begin::Label-->
-                                            <label class="fs-6 fw-bold mb-2">
-                                                <span class="required"> المحافظة </span>
-                                                <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip"
-                                                    title="Country of origination"></i>
-                                            </label>
-                                            <!--end::Label-->
-                                            <!--begin::Input-->
-                                            <select name="country" aria-label="" data-control="select2"
-                                                class="form-select form-select-solid fw-bolder">
-                                                <option value="">اختار</option <option value="AE">الشمال</option>
-                                                <option value="AE">غزة</option>
-                                                <option value="GB">الوسطى </option>
-                                                <option value="GB">الجنوب </option>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-12 mt-8">
 
+                                                <label for="governorates_cd" class="form-label required"> المحافظة </label>
 
-                                            </select>
-                                            <!--end::Input-->
-                                        </div>
+                                                <select class="form-select form-control form-control-solid"
+                                                    aria-label="Default select example" name="governorates_cd" id="governorates_cd">
+                                                    <option selected>أختار</option>
+                                                    <option value="1">شمال</option>
+                                                    <option value="2">جنوب</option>
+                                                    <option value="2">وسطى</option>
+                                                </select>
 
-                                        <div class="d-flex flex-column mb-7 fv-row">
-                                            <!--begin::Label-->
-                                            <label class="fs-6 fw-bold mb-2">
-                                                <span class="required"> المدينة</span>
-                                                <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip"
-                                                    title="Country of origination"></i>
-                                            </label>
-                                            <!--end::Label-->
-                                            <!--begin::Input-->
-                                            <select name="country" aria-label="" data-control="select2"
-                                                class="form-select form-select-solid fw-bolder">
-                                                <option value="">اختار</option <option value="AE">x</option>
-                                                <option value="AE">x</option>
-                                                <option value="GB">x </option>
-
-
-                                            </select>
-                                            <!--end::Input-->
-                                        </div>
-                                        <div class="d-flex flex-column mb-7 fv-row">
-                                            <!--begin::Label-->
-                                            <label class="fs-6 fw-bold mb-2">
-                                                <span class="required"> الحي</span>
-                                                <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip"
-                                                    title="Country of origination"></i>
-                                            </label>
-                                            <!--end::Label-->
-                                            <!--begin::Input-->
-                                            <select name="country" aria-label="" data-control="select2"
-                                                class="form-select form-select-solid fw-bolder">
-                                                <option value="">اختار</option <option value="AE">xx</option>
-                                                <option value="AE">xx</option>
-
-
-                                            </select>
-                                            <!--end::Input-->
-                                        </div>
-                                        <!--end::Input group-->
-                                        <br><br>
-                                        <div class="fv-row flex-row-fluid fv-plugins-icon-container">
-                                            <!--begin::Label-->
-                                            <label for="date_birth" class="required form-label">العنوان </label>
-                                            <!--end::Label-->
-                                            <!--begin::Input-->
-                                            <input class="form-control" type="text" id="date_birth" name="date_birth"
-                                                placeholder="" value="">
-                                            <!--end::Input-->
-                                            <div class="fv-plugins-message-container invalid-feedback"></div>
-                                        </div>
-                                        <br>
-                                        <div class="d-flex flex-column flex-md-row gap-5">
-
-
-
-                                            <div class="flex-row-fluid">
-                                                <!--begin::Label-->
-                                                <label for="full_name" class="required form-label"> رقم الهاتف</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control" type="tel" id="full_name" name="full_name"
-                                                    placeholder="" value="">
-                                                <!--end::Input-->
                                             </div>
-                                            <div class="fv-row flex-row-fluid fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label for="id_number" class="required form-label">رقم الجوال </label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control" type="tel" id="id_number" name="id_number"
-                                                    placeholder="" value="">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
-                                            </div>
+                                            <div class="col-md-4 col-sm-12 mt-8">
 
+                                                <label for="cities_cd" class="form-label required"> المدينة </label>
+
+                                                <select class="form-select form-control form-control-solid"
+                                                    aria-label="Default select example" id="cities_cd" name="cities_cd">
+                                                    <option selected>أختار</option>
+                                                    <option value="1">غزة</option>
+                                                    <option value="2">خانيونس</option>
+                                                    <option value="2">رفح</option>
+                                                </select>
+
+                                            </div>
+                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                <label for="areas_cd" class="form-label required"> الحي </label>
+
+                                                <select class="form-select form-control form-control-solid"
+                                                    aria-label="Default select example" id="areas_cd" name="areas_cd">
+                                                    <option selected>أختار</option>
+                                                    <option value="1">غزة</option>
+                                                    <option value="2">خانيونس</option>
+                                                    <option value="2">رفح</option>
+                                                </select>
+
+                                            </div>
+                                            <div class="col-md-4 col-sm-12  mt-8">
+
+                                                <label for="address" class="form-label required">العنوان</label>
+                                                <input type="text" class="form-control form-control-solid" name="address" id="address">
+
+                                            </div>
+                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                <label for="phone" class="form-label required"> رقم الهاتف</label>
+                                                <input type="number" class="form-control form-control-solid" name="phone" id="phone">
+
+                                            </div>
+                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                <label for="mobile" class="form-label required"> رقم الجوال</label>
+                                                <input type="number" class="form-control form-control-solid" name="mobile" id="mobile">
+
+                                            </div>
                                         </div>
 
-
-                                        <!--end::Input group-->
-
-
-                                        <!--end::Input group-->
                                     </div>
-                                    <!--end::Card header-->
                                 </div>
                                 <!--end::General options-->
 
@@ -788,87 +513,49 @@
                                             <h2> تفاصيل مدرسة الطفل </h2>
                                         </div>
                                     </div>
-                                    <!--end::Card header-->
-                                    <!--begin::Card body-->
-                                    <div class="modal-body py-10 px-lg-17 ">
+                                    <div class="container">
+                                        <div class="row">
 
-                                        <div class="d-flex flex-column flex-md-row gap-5">
+                                            <div class="col-md-4 col-sm-12  mt-8">
 
+                                                <label for="school_name" class="form-label required">اسم المدرسة</label>
+                                                <input type="text" class="form-control form-control-solid" name="school_name" id="school_name">
 
-
-                                            <div class="flex-row-fluid">
-                                                <!--begin::Label-->
-                                                <label for="teacher_name" class="required form-label">  اسم المدرسة</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control" type="text" id="teacher_name" name="full_name"
-                                                    placeholder="" value="">
-                                                <!--end::Input-->
                                             </div>
-                                            <div class="fv-row flex-row-fluid fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label for="school_address" class="required form-label">عنوان المدرسة  </label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control" type="tel" id="school_address" name="id_number"
-                                                    placeholder="" value="">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
+                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                <label for="school_address" class="form-label required">عنوان المدرسة</label>
+                                                <input type="number" class="form-control form-control-solid" name="school_address" id="school_address">
+
                                             </div>
+                                            <div class="col-md-4 col-sm-12 mt-8">
 
-                                        </div>
-                                        <br><br>
-                                        <div class="d-flex flex-column flex-md-row gap-5">
+                                                <label for="school_contact_person" class="form-label required"> شخص التواصل </label>
+                                                <input type="number" class="form-control form-control-solid" name="school_contact_person" id="school_contact_person">
 
-
-
-                                            <div class="flex-row-fluid">
-                                                <!--begin::Label-->
-                                                <label for="contact_person" class="required form-label">  شخص التواصل </label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control" type="text" id="contact_person" name="full_name"
-                                                    placeholder="" value="">
-                                                <!--end::Input-->
                                             </div>
-                                            <div class="fv-row flex-row-fluid fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label for="tel_number" class="required form-label">رقم الهاتف   </label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control" type="tel" id="tel_number" name="number"
-                                                    placeholder="" value="">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
-                                            </div>
+                                            <div class="col-md-4 col-sm-12 mt-8">
 
-                                            <div class="fv-row flex-row-fluid fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label for="mob_num" class="required form-label">رقم الجوال    </label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control" type="tel" id="mob_num" name="id_number"
-                                                    placeholder="" value="">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
+                                                <label for="school_phone" class="form-label required"> رقم الهاتف </label>
+                                                <input type="number" class="form-control form-control-solid" name="school_phone" id="school_phone">
+
+                                            </div>
+                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                <label for="school_mobile" class="form-label required"> رقم الجوال </label>
+                                                <input type="number" class="form-control form-control-solid" name="school_mobile" id="school_mobile">
+
                                             </div>
 
                                         </div>
 
-
-                                        <!--end::Input group-->
-
-
-                                        <!--end::Input group-->
                                     </div>
-                                    <!--end::Card header-->
                                 </div>
                                 <!--end::General options-->
 
 
                             </div>
                         </div>
-                        <br> <br>
 
                     </div>
 
@@ -881,153 +568,56 @@
                                     <!--begin::Card header-->
                                     <div class="card-header">
                                         <div class="card-title">
-                                            <h2>  تفاصيل عمل الطفل/الأسرة </h2>
+                                            <h2> تفاصيل عمل الطفل/الأسرة </h2>
                                         </div>
                                     </div>
-                                    <!--end::Card header-->
-                                    <!--begin::Card body-->
-                                    <div class="modal-body py-10 px-lg-17 ">
-                                        <!--begin::Input group-->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-12 mt-8">
 
-                                        <br><br>
-                                        <div class="fv-row flex-row-fluid fv-plugins-icon-container">
+                                                <label for="employment_status_cd" class="form-label">حالة الوظيفة</label>
 
+                                                <select class="form-select form-control form-control-solid "
+                                                    aria-label="Default select example" name="employment_status_cd" id="employment_status_cd">
+                                                    <option selected>أختار</option>
+                                                    <option value="AE">يعمل </option>
+                                                    <option value="GB">لا يعمل </option>
+                                                    <option value="GB">يعمل لحسابه الشخصي </option>
 
-                                            <div class="fv-row mb-7">
-                                                <!--begin::Label-->
-                                                <label class="required fs-6 fw-bold mb-2"> حالة الوظيفة </label>
-                                                <div class="fv-row mb-10">
-                                                    <!--begin::Label-->
+                                                </select>
 
-                                                    <!--begin::Row-->
-                                                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-1 row-cols-xl-3 g-9"
-                                                        data-kt-buttons="true"
-                                                        data-kt-buttons-target="[data-kt-button='true']">
-                                                        <!--begin::Col-->
-                                                        <div class="col">
-                                                            <!--begin::Option-->
-                                                            <label
-                                                                class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                                                data-kt-button="true">
-                                                                <!--begin::Radio-->
-                                                                <span
-                                                                    class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="Gender" value="1">
-                                                                </span>
-                                                                <!--end::Radio-->
-                                                                <!--begin::Info-->
-                                                                <span class="ms-5">
-                                                                    <span
-                                                                        class="fs-4 fw-bolder text-gray-800 d-block">يعمل</span>
-                                                                </span>
-                                                                <!--end::Info-->
-                                                            </label>
-                                                            <!--end::Option-->
-                                                        </div>
-                                                        <div class="col">
-                                                            <!--begin::Option-->
-                                                            <label
-                                                                class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                                                data-kt-button="true">
-                                                                <!--begin::Radio-->
-                                                                <span
-                                                                    class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="Gender" value="1">
-                                                                </span>
-                                                                <!--end::Radio-->
-                                                                <!--begin::Info-->
-                                                                <span class="ms-5">
-                                                                    <span
-                                                                        class="fs-4 fw-bolder text-gray-800 d-block">لا يعمل</span>
-                                                                </span>
-                                                                <!--end::Info-->
-                                                            </label>
-                                                            <!--end::Option-->
-                                                        </div>
-                                                        <div class="col">
-                                                            <!--begin::Option-->
-                                                            <label
-                                                                class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                                                data-kt-button="true">
-                                                                <!--begin::Radio-->
-                                                                <span
-                                                                    class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="Gender" value="1">
-                                                                </span>
-                                                                <!--end::Radio-->
-                                                                <!--begin::Info-->
-                                                                <span class="ms-5">
-                                                                    <span
-                                                                        class="fs-4 fw-bolder text-gray-800 d-block">يعمل لحسابه الشخصي</span>
-                                                                </span>
-                                                                <!--end::Info-->
-                                                            </label>
-                                                            <!--end::Option-->
-                                                        </div>
-                                                    </div>
-                                                    <!--end::Row-->
-                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-12 mt-8 ">
+
+                                                <label for="employer_name" class="form-label required">اسم المشغل</label>
+                                                <input type="text" class="form-control form-control-solid" name="employer_name" id=" employer_name">
+
+                                            </div>
+                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                <label for="employer_phone" class="form-label required"> رقم الهاتف </label>
+                                                <input type="number" class="form-control form-control-solid" name="employer_phone" id="employer_phone">
+
+                                            </div>
+                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                <label for="employer_mobile" class="form-label required"> رقم الجوال </label>
+                                                <input type="number" class="form-control form-control-solid" name="employer_mobile" id="employer_mobile">
+
+                                            </div>
+                                            <div class="col-md-4 col-sm-12 mt-8">
+
+                                                <label for="created_by" class="form-label ">اسم الشخص المسجل </label>
+                                                <input type="text" value="أحمد محمد" placeholder="" disabled
+                                                    class="form-control form-control-solid" name="created_by" id="created_by">
 
                                             </div>
 
 
 
                                         </div>
-                                        <br>
 
-                                        <div class="d-flex flex-column flex-md-row gap-5">
-                                            <div class="flex-row-fluid">
-                                                <!--begin::Label-->
-                                                <label for="place_birth" class="required form-label">  أسم المشغل</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control" type="text" id="place_birth" name="place_birth"
-                                                    placeholder="" value="">
-                                                <!--end::Input-->
-                                            </div>
-
-
-                                            <div class="flex-row-fluid">
-                                                <!--begin::Label-->
-                                                <label for="full_name" class="required form-label"> رقم الهاتف</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control" type="tel" id="full_name" name="full_name"
-                                                    placeholder="" value="">
-                                                <!--end::Input-->
-                                            </div>
-                                            <div class="fv-row flex-row-fluid fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label for="id_number" class="required form-label">رقم الجوال </label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control" type="tel" id="id_number" name="id_number"
-                                                    placeholder="" value="">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
-                                            </div>
-
-                                        </div>
-                                        <br> <br>
-                                        <div class="flex-row-fluid">
-                                            <!--begin::Label-->
-                                            <label for="place_birth" class="required form-label">  أسم الشخص المسجل</label>
-                                            <!--end::Label-->
-                                            <!--begin::Input-->
-                                            <input class="form-control" type="text" id="place_birth" name="place_birth"
-                                                placeholder="" value="">
-                                            <!--end::Input-->
-                                        </div>
-
-                                        <!--end::Input group-->
-
-
-                                        <!--end::Input group-->
                                     </div>
-                                    <!--end::Card header-->
                                 </div>
                                 <!--end::General options-->
 
@@ -1043,7 +633,7 @@
                             class="btn btn-light me-5">الغاء</a>
                         <!--end::Button-->
                         <!--begin::Button-->
-                        <button type="submit" id="kt_ecommerce_add_product_submit" class="btn btn-primary">
+                        <button type="submit"  class="btn btn-primary">
                             <span class="indicator-label">حفظ</span>
                             <span class="indicator-progress">Please wait...
                                 <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
@@ -1059,5 +649,67 @@
     </div>
     <!--end::Post-->
 
+
 @endsection
 @section('js')
+    <script src="{{ asset('assets/plugins/custom/formrepeater/formrepeater.bundle.js') }}"></script>
+    <script>
+        $('#kt_docs_repeater_basic').repeater({
+            initEmpty: true,
+
+            defaultValues: {
+                'text-input': 'foo'
+            },
+
+            show: function() {
+                $(this).slideDown();
+            },
+
+            hide: function(deleteElement) {
+                $(this).slideUp(deleteElement);
+            }
+        });
+    </script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+    {{--  <script>
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+              .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                  if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                  }
+
+                  form.classList.add('was-validated')
+                }, false)
+              })
+          })()
+    </script>  --}}
+
+@stop

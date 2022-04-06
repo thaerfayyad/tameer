@@ -6,6 +6,7 @@
 <script src="{{asset('assets/js/custom/modals/upgrade-plan.js')}}"></script>
 <script src="{{asset('assets/js/custom/modals/upgrade-plan.js')}}"></script>
 <script src="{{asset('assets/js/custom/intro.js')}}"></script>
+{{--  <script src="{{asset('assets/js/custom/apps/ecommerce/catalog/save-product.js')}}"></script>  --}}
 {{--TODO:: ACTIVE This Line for calender--}}
-{{--<script src="{{assert('assets/plugins/custom/fullcalendar/fullcalendar.bundle.js')}}"></script>--}}
+{{--  <script src="{{asset('assets/plugins/custom/fullcalendar/fullcalendar.bundle.js')}}"></script>  --}}
 @yield('js')
